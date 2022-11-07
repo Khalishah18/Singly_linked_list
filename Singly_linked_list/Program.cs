@@ -32,6 +32,21 @@ namespace Singly_linked_list
             Node newnode = new Node();
             newnode.rollNumber = rollNo;
             newnode.name = nm;
+            //if the node to be inserted is the first node
+            if((START == null) || rollNo <= START.rollNumber)
+            {
+                if((START != null) &&(rollNo == START.rollNumber))
+                {
+                    Console.WriteLine();
+                    return;
+                }
+                newnode.next = START;
+                START = newnode;
+                return;
+            }
+            Node previous, current;
+            previous = START;
+            current = START;
         }
     }
     class Program
