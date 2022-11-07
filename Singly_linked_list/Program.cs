@@ -165,7 +165,7 @@ namespace Singly_linked_list
                                 previous = current = null;
                                 Console.Write("\nEnter the roll number of the" + "Student whole record is to be searched: ");
                                 int num = Convert.ToInt32(Console.ReadLine());
-                                if (obj.Search(num ref previous, ref current) == false)
+                                if (obj.Search(num,ref previous, ref current) == false)
                                     Console.WriteLine("\nRecord not found.");
                                 else
                                 {
@@ -186,7 +186,7 @@ namespace Singly_linked_list
                 }
                 catch(Exception)
                 {
-
+                    Console.WriteLine("\nCheck for the value entered");
                 }
             }
         }
