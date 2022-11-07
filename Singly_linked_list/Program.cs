@@ -115,7 +115,10 @@ namespace Singly_linked_list
             List obj = new List();
             while(true)
             {
-
+                try
+                {
+                    Console.WriteLine("\nMENU");
+                }
             }
         }
     }
